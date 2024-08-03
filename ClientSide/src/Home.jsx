@@ -11,31 +11,32 @@ import locationGif from './icons.gif'
 const Home = ()=>{
     return (
         <>  
-            <div>
-                <img src={banner} alt="Loading" />
+            <div id="top_page">
+                <img src={banner} alt="Loading" className='md:h-[3rem] w-full'/>
             </div>
             {/* header section from here */}
             <header className='-mt-[3.99rem] h-screen bg-stone-100'>
                 <div className='flex flex-row justify-around mt-16 '>
-                    <div className=' h-[6rem] w-[25rem] flex flex-row  items-center justify-around'>
-                        <img src={locationGif} className='absolute left-[8.5rem] h-[2.9rem]' />
-                        <button className='border border-white pl-2 font-bold h-[3rem] rounded-r-full w-[13rem] text-white bg-red-600 '>
+                    
+                    <div className='md:mt-0 mt-16 md:order-0 order-1 h-[6rem] w-[25rem] flex flex-row  items-center justify-around'>
+                        <img src={locationGif} className='h-[2.9rem]' />
+                        <button className='border border-white pl-2  md:ml-0 -ml-12 md:font-bold md:h-[3rem] h-[2rem]  md:rounded-r-full md:w-[11rem] w-[10rem] text-white bg-red-600 '>
                             Change Location<br/>
                             xyz
                         </button>
-                        <span className='text-lg font-bold'>
+                        <span className='md:text-lg md:font-bold'>
                             021-111-666-111
                         </span>
                     </div>
 
 
-                    <div className=' h-40 w-[20rem] shadow-lg shadow-neutral-400'>
-                        <img src={logo} alt="Loading"  className='w-full h-full'/>
+                    <div className=' md:order-1 order-0 md:h-40 md:w-[20rem] md:shadow-lg md:shadow-neutral-400'>
+                        <img src={logo} alt="Loading"  className='md:w-full md:h-full h-[4rem]'/>
                     </div>
 
 
 
-                    <div className=' h-32 w-[25rem] flex flex-row justify-between items-center'>
+                    <div className='md:order-2 order-2 h-32 w-[25rem] flex flex-row justify-between items-center'>
                         <button className='bg-red-600 text-md rounded-full font-bold hover:scale-110 transition duration-300 ease-in-out text-white w-[12rem] h-[2rem]'>Submit Your Complain</button>
                         <div className='text-2xl hover:cursor-pointer'>&#128722;</div>
                         
@@ -95,7 +96,7 @@ const Home = ()=>{
                     <div className='h-[3rem] w-[45rem]'>
                         <input className='border border-red-600   h-full w-full rounded-full text-red-400 pl-6 text-xl' value='Search the Item'/>
                     </div>
-                    <div className='font-semibold rounded-full w-[4.9rem] h-[3rem] text-center text-white bg-red-600 pt-2 relative -left-20'>
+                    <div className='font-semibold rounded-full w-[5rem] h-[3rem] text-center text-white bg-red-600 pt-2 relative -left-20'>
                         <button >
                             Search
                         </button>
